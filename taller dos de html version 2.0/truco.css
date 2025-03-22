@@ -1,0 +1,29 @@
+body .carrusel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+img .carrusel {
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
+    filter: drop-shadow(1px 1px 5px rgb(0 0 0));
+}
+
+
+.carrusel {
+    display: flex;
+    gap: 15px;
+    overflow-x: scroll;
+    width: 110%;
+    scroll-snap-type: x mandatory;
+}
+
+.carrusel>div {
+    scroll-snap-align: center;
+    min-width: 400px;
+    margin: 10px;
+    background-color: aliceblue;
+}
